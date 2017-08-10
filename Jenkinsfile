@@ -7,6 +7,6 @@ node {
     }
     stage ('Results') {
         jUnit '**/target/surefire-reports/TEST-*.xml'
-        archive '/target/* .jar'
+        archive '/target/*.jar'
     }
 }
